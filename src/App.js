@@ -199,8 +199,8 @@ function App() {
               </div>
             </button>
           </div>
+          <iframe title="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1E39ZaSepTiwPt?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style={{ borderRadius: "12px", marginTop: "20px" }}></iframe>
         </div>
-
       </div>
     </div>
   );
