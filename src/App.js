@@ -122,7 +122,7 @@ function App() {
                 Ready?
               </h1>
 
-              {/* <p> You have one minute to act out the word.</p> */}
+              {/* <p> You have one minute to act the word.</p> */}
               <p> How well can you act and how well can you guess? Here’s a game to test your capabilities in both!</p>
 
 
@@ -134,7 +134,7 @@ function App() {
               }</h1>
 
               {/* <p> How well can you act and how well can you guess? Here’s a game to test your capabilities in both!</p> */}
-              <p> You have one minute to act out the word.</p>
+              <p> You have one minute to act any ONE of the following.</p>
 
               <div className="productFeatures">
                 <div className="feature">
