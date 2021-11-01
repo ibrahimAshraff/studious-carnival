@@ -49,27 +49,18 @@ function App() {
       }
     }
 
-
-    // else {
-    //   reset()
-    //   // setIsTimer(!isTimer)
-    // }
-
-
   })
 
 
 
   const returnRandom = () => {
 
-
-    const num = Math.floor(Math.random() * 7) + 1
+    const length = actGame.length
+    const num = Math.floor(Math.random() * length) + 1
 
     setNum(num)
     reset()
-
     setIsTimer(true)
-
 
   }
 
@@ -151,7 +142,6 @@ function App() {
                   </div>
                   <div className="featureText">
                     <p> <strong>
-
                       {actGame[num - 1]?.item_2}
                     </strong></p>
                     {/* <p>Microphone</p> */}
@@ -162,10 +152,7 @@ function App() {
                   </div>
                   <div className="featureText">
                     <p> <strong>
-
-
                       {actGame[num - 1]?.item_3}
-
                     </strong></p>
                     {/* <p>Feedback</p> */}
                   </div>

@@ -1,7 +1,6 @@
 export const actGame = [
     {
         "title": "Scary Movies",
-
         "item_1": "Karashika",
         "item_2": "Koto Aiye",
         "item_3": "Hassan",
@@ -17,7 +16,6 @@ export const actGame = [
 
     {
         "title": "Office Snacks",
-
         "item_1": "Chin Chin",
         "item_2": "Bole (Roast Plantain)",
         "item_3": "Groundnut",
@@ -25,12 +23,10 @@ export const actGame = [
 
     {
         "title": "News Channels",
-
         "item_1": "NTA",
         "item_2": "AIT",
         "item_3": "Channels TV",
     },
-
     {
         "title": "Books",
 
@@ -51,10 +47,7 @@ export const actGame = [
         "item_1": "Agbero",
         "item_2": "Brick Layer",
         "item_3": "Cobbler",
-    },
-
-
-
+    }
 ]
 
 
