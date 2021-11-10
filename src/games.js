@@ -29,7 +29,6 @@ export const actGame = [
     },
     {
         "title": "Books",
-
         "item_1": "Things Fall Apart",
         "item_2": "The Lion and the Jewel",
         "item_3": "Arrow of God",
@@ -43,7 +42,6 @@ export const actGame = [
     },
     {
         "title": "Blue Collar Jobs",
-
         "item_1": "Agbero",
         "item_2": "Brick Layer",
         "item_3": "Cobbler",

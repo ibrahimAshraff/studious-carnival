@@ -15,7 +15,7 @@ function App() {
   const [num, setNum] = useState(null)
   const [isTimer, setIsTimer] = useState(false)
   const [[hrs, mins, secs], setTime] = useState([hours, minutes, seconds]);
-
+  const [colour, setColour] = useState(true)
 
   const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
@@ -32,6 +32,18 @@ function App() {
       setTime([hrs, mins, secs - 1]);
     }
   };
+
+
+
+  useEffect(() => {
+    if (secs <= 10 && secs !== 0) {
+      setColour(false)
+    }
+
+    else {
+      setColour(true)
+    }
+  }, [secs])
 
 
   useEffect(() => {
@@ -113,7 +125,6 @@ function App() {
                 Ready?
               </h1>
 
-              {/* <p> You have one minute to act the word.</p> */}
               <p> How well can you act and how well can you guess? Here’s a game to test your capabilities in both!</p>
 
 
@@ -124,7 +135,6 @@ function App() {
                 actGame[num - 1]?.title
               }</h1>
 
-              {/* <p> How well can you act and how well can you guess? Here’s a game to test your capabilities in both!</p> */}
               <p> You have one minute to act any ONE of the following.</p>
 
               <div className="productFeatures">
@@ -164,9 +174,16 @@ function App() {
 
           <div className="checkoutButton">
             <div className="priceTag">
-              {`${mins
-                .toString()
-                .padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}
+
+              {colour ? <div>
+
+                {mins.toString().padStart(2, '0')}:{secs.toString().padStart(2, '0')}
+
+              </div> :
+                <div style={{ color: "#FFA500" }}>
+                  {mins.toString().padStart(2, '0')}:{secs.toString().padStart(2, '0')}
+
+                </div>}
             </div>
             <button className="preorder" onClick={returnRandom}>
               <p>New Word</p>
