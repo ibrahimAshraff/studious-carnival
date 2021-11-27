@@ -5,10 +5,8 @@ export const actGame = [
         "item_2": "Koto Aiye",
         "item_3": "Hassan",
     },
-
     {
         "title": "Wasting Time at Work",
-
         "item_1": "Gossip",
         "item_2": "Watching Movies",
         "item_3": "Pressing Phone",
