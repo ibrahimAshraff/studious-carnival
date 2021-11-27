@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <div className="main-container">
-                <div className="heading">
+                <div className="heading" style={{ marginTop: "50px" }}>
                     <h1 className="heading__title">Choose a Game</h1>
                     <p className="heading__credits"></p>
                 </div>
