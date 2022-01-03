@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 
 import { ImCheckboxUnchecked } from 'react-icons/im';
 import { ImCheckboxChecked } from 'react-icons/im';
+import { beep } from '../../../utils/sound';
 
 
 function PracticeAct() {
 
     const hoursMinSecs = { hours: 0, minutes: 1, seconds: 0 }
 
-    const { hours = 0, minutes = 0, seconds = 60, } = hoursMinSecs;
+    const { hours = 0, minutes = 0, seconds = 0, } = hoursMinSecs;
 
 
 
@@ -78,9 +79,13 @@ function PracticeAct() {
 
 
 
+
+
+
     useEffect(() => {
         if (secs <= 10 && secs !== 0) {
             setColour(false)
+            beep()
         }
 
         else {
